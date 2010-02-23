@@ -15,6 +15,7 @@ if __name__=="__main__":
 
     }
     myParams["uid"]="stranger"
+    myParams["pwd"]="strangepass"
     print buildConnectionString(myParams)
     
     
