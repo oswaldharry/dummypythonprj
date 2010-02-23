@@ -5,6 +5,7 @@ def buildConnectionString(params):
     Returns a string """
     return ";".join(["%s=%s"% (k,v) for k,v in params.items() ])
 
+
 if __name__=="__main__":
     print 'main'
     myParams={"server":"mypilgrim",
@@ -13,5 +14,7 @@ if __name__=="__main__":
         "pwd":"secret"
 
     }
+    myParams["uid"]="stranger"
     print buildConnectionString(myParams)
+    
     
